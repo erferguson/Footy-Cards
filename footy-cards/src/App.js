@@ -17,6 +17,7 @@ function App() {
         >
           Learn React
         </a>
+        <div>This is Footy Cards</div>
       </header>
     </div>
   );
