@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 
+import { FlippingCard,FlippingCardFront,FlippingCardBack,} from 'react-ui-cards';
+
 function App() {
   return (
     <div className="App">
@@ -18,6 +20,14 @@ function App() {
           Learn React
         </a>
         <div>This is Footy Cards</div>
+        <FlippingCard>
+          <FlippingCardBack>
+            Content that will be displayed on the back of the card
+          </FlippingCardBack>
+          <FlippingCardFront>
+            Content that will be displayed on the front of the card
+          </FlippingCardFront>
+        </FlippingCard>
       </header>
     </div>
   );
