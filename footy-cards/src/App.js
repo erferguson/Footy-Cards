@@ -19,12 +19,28 @@ function App() {
         >
           Learn React
         </a>
+        <div>
         <div>This is Footy Cards</div>
+        
+        </div>
+        
         <FlippingCard>
           <FlippingCardBack>
             Content that will be displayed on the back of the card
           </FlippingCardBack>
           <FlippingCardFront>
+          <table style={ {border: "1px solid red"} }>
+            <tr>
+              <th>Name</th>
+              <th>Position</th>
+              <th>Caps</th>
+            </tr>
+            <tr>
+              <td>CP</td>
+              <td>Midfield</td>
+              <td>1</td>
+            </tr>
+          </table>
             Content that will be displayed on the front of the card
           </FlippingCardFront>
         </FlippingCard>
