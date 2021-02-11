@@ -11,3 +11,7 @@
 - added html table for holding data
 
 - 
+## 2.10.21
+- imported Sass
+
+- added UserCard to footy_cards for context, sizing of FlippingCard is set to a certain width
