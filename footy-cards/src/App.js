@@ -1,32 +1,54 @@
-import logo from './logo.svg';
+import styles from './styles.scss';
 import './App.css';
 
-import { FlippingCard,FlippingCardFront,FlippingCardBack,} from 'react-ui-cards';
+import { UserCard, FlippingCard,FlippingCardFront,FlippingCardBack,} from 'react-ui-cards';
 
 function App() {
+  const data = {
+    "players" : [
+        {
+        "name": "Christian Pulisic",
+        "position": "Midfield",
+        "caps": 1
+        },
+      ]
+  }
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
         <div>
         <div>This is Footy Cards</div>
         
+        </div>
+        <div className={styles['card-container']}>
+        <UserCard
+          float
+          header='https://i.imgur.com/w5tX1Pn.jpg'
+          avatar='https://i.imgur.com/uDYejhJ.jpg'
+          name='Justin Case'
+          positionName='Software Developer'
+          stats={[
+            {
+              name: 'followers',
+              value: 21
+            },
+            {
+              name: 'following',
+              value: 37
+            },
+            {
+              name: 'posts',
+              value: 117
+            }
+          ]}
+        />
         </div>
         
         <FlippingCard>
           <FlippingCardBack>
             Content that will be displayed on the back of the card
+            
           </FlippingCardBack>
           <FlippingCardFront>
           <table style={ {border: "1px solid red"} }>
@@ -36,12 +58,12 @@ function App() {
               <th>Caps</th>
             </tr>
             <tr>
-              <td>CP</td>
-              <td>Midfield</td>
-              <td>1</td>
+              <td>{data.players[0].name}</td>
+              <td>{data.players[0].position}</td>
+              <td>{data.players[0].caps}</td>
             </tr>
           </table>
-            Content that will be displayed on the front of the card
+            Bottom of front-card
           </FlippingCardFront>
         </FlippingCard>
       </header>
