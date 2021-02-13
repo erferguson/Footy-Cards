@@ -1,0 +1,41 @@
+$myColor: purple;
+
+.title-container {
+    border: 2px solid red;
+    padding: 0;
+    color: $myColor;
+}
+
+.card-container {
+    border: 2px solid yellow;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+  
+    @media screen and (max-width: 768px) {
+      flex-flow: column;
+    }
+  }
+
+  .userCard {
+    position: relative;
+    max-width: 100%;
+    width: 250px;
+    min-width: 250px;
+    min-height: 350px;
+    display: flex;
+    flex-flow: column;
+    background-color: #ecf0f1;
+    border-radius: 0.25rem;
+    margin: 1rem;
+    user-select: none;
+    transition: 0.25s;
+  
+  &.float:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 10px -10px rgba(#7f8c8d, 1);
+    }
+  }

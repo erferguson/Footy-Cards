@@ -1,10 +1,10 @@
 import styles from './styles.scss';
 import './App.css';
 
-import CardUser from './practice/userCards'
+import CardUser from './practice/userCard/userCards'
 import FlippedCard from './practice/flippingCard'
 
-import { UserCard, FlippingCard,FlippingCardFront,FlippingCardBack,} from 'react-ui-cards';
+// import { UserCard, FlippingCard,FlippingCardFront,FlippingCardBack,} from 'react-ui-cards';
 
 function App() {
   // const data = {
@@ -18,13 +18,13 @@ function App() {
   // }
 
   return (
-    <div className="App">
-      <header className="App-header">
+    <div>
+      <header>
         <div>
           <div>This is Footy Cards</div>
         </div>
         <CardUser />
-        <FlippedCard />
+        {/* <FlippedCard /> */}
       </header>
     </div>
   );

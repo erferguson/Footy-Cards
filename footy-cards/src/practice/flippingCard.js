@@ -16,8 +16,8 @@ function flippingCard (){
         }
       
         return (
-          <div className="App">
-            <header className="App-header">
+          <div>
+            <header>
               <div>
                 <div>flipping Card</div>
               </div>

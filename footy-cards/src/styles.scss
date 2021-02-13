@@ -1,3 +1,5 @@
+$myColor: purple;
+
 html,
 body {
   width: 100%;
@@ -6,15 +8,14 @@ body {
   margin: 0;
   padding: 0;
 
-  background-image: linear-gradient( 135deg, #ABDCFF 10%, #0396FF 100%);
-  background-attachment: fixed;
+  // background-image: linear-gradient( 135deg, #ABDCFF 10%, #0396FF 100%);
+  // background-attachment: fixed;
 
   font-family: Raleway;
 }
 
 h2 {
-  color: #2c3e50;
-  margin: 2rem 0 0 2rem;
+    border: 1px solid black;
 }
 
 .links {
@@ -30,15 +31,4 @@ h2 {
   }
 }
 
-.card-container {
-  display: flex;
-  flex-flow: row;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  box-sizing: border-box;
 
-  @media screen and (max-width: 768px) {
-    flex-flow: column;
-  }
-}
