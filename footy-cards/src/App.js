@@ -1,8 +1,8 @@
 import styles from './styles.scss';
-import './App.css';
+// import './App.css';
 
 import CardUser from './practice/userCard/userCards'
-import FlippedCard from './practice/flippingCard'
+import FlippedCard from './practice/flippingCard/flippingCard'
 
 // import { UserCard, FlippingCard,FlippingCardFront,FlippingCardBack,} from 'react-ui-cards';
 
@@ -23,8 +23,8 @@ function App() {
         <div>
           <div>This is Footy Cards</div>
         </div>
-        <CardUser />
-        {/* <FlippedCard /> */}
+        {/* <CardUser /> */}
+        <FlippedCard />
       </header>
     </div>
   );

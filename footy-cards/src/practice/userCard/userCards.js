@@ -20,10 +20,10 @@ function userCards () {
       <div className='title-container'>
         <h2>user Cards</h2>
       </div>
-        <div className='card-container' >
-            <p>Front - user Card</p>
+      <div className='card-container' >
+          <p>Front - user Card</p>
         <UserCard
-          // className='userCard'
+          className='userCard'
           float
           header='https://i.imgur.com/w5tX1Pn.jpg'
           avatar='https://i.imgur.com/uDYejhJ.jpg'
