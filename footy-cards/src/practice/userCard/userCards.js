@@ -25,8 +25,8 @@ function userCards () {
         <UserCard
           className='userCard'
           float
-          header='https://i.imgur.com/w5tX1Pn.jpg'
-          avatar='https://i.imgur.com/uDYejhJ.jpg'
+          header='https://seeklogo.com/images/U/us-soccer-logo-1E18C40753-seeklogo.com.png'
+          avatar='https://www.soccerwire.com/wp-content/uploads/2019/12/USMNT-christian-pulisic.jpg'
           // name='Justin Case'
           name={data.players[0].name}
           positionName={data.players[0].position}
