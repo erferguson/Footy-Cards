@@ -23,7 +23,7 @@ function userCards () {
         <div className='card-container' >
             <p>Front - user Card</p>
         <UserCard
-        className='userCard'
+          // className='userCard'
           float
           header='https://i.imgur.com/w5tX1Pn.jpg'
           avatar='https://i.imgur.com/uDYejhJ.jpg'
