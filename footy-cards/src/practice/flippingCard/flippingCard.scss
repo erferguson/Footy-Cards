@@ -4,9 +4,12 @@ h2 {
 }
 
 p {
-    color: hotpink;
+    border: 1px solid hotpink;
     font-size: .9rem;
     font-weight: bold;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
 }
 
 .title {
@@ -25,8 +28,19 @@ p {
     // justify-content: center;
 }
 
-.main-table-back {
-    border: 2px solid purple;
+.main-stats {
+    border: 2px solid gold;
+    display: flex;
+    // flex-direction: row;
+    // justify-content: space-evenly;
+    // align-items: center;
+}
+
+.p-stats {
+    border: 1px solid red;
+    // display: flex;
+    // justify-content: center;
+    // align-content: center;
 }
 
 img {
@@ -45,4 +59,9 @@ img {
 .center-image img {
     // max-width: 100%;
     // max-height: 100%;
+}
+
+// BACK
+.main-table-back {
+    border: 2px solid purple;
 }

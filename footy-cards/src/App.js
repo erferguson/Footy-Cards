@@ -23,8 +23,8 @@ function App() {
         <div>
           <div>This is Footy Cards</div>
         </div>
-        <CardUser />
-        {/* <FlippedCard /> */}
+        {/* <CardUser /> */}
+        <FlippedCard />
       </header>
     </div>
   );

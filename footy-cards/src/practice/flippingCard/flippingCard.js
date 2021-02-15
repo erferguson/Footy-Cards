@@ -10,8 +10,13 @@ function flippingCard (){
           "players" : [
               {
               "name": "Christian Pulisic",
+              "hometown": "Hershey, PA, America",
               "position": "Midfield",
-              "caps": 1
+              "club": "Chelsea FC",
+              "caps": 1,
+              'ntgoals': 99,
+              'ntassists': 66,
+              'ntcards': 4
               },
             ]
         }
@@ -30,7 +35,7 @@ function flippingCard (){
                     <img src={CP}/>
                   </div>
                   <div className='main-table-front'>
-                      <p>name: {data.players[0].name}</p>
+                      <p>{data.players[0].name}</p>
                       <p>position: {data.players[0].position}</p>
                       <p>caps: {data.players[0].caps}</p>
                     {/* <tr>
@@ -43,6 +48,11 @@ function flippingCard (){
                         <td>{data.players[0].position}</td>
                         <td>{data.players[0].caps}</td>
                     </tr> */}
+                    </div>
+                    <div className='main-stats'>
+                      <p className='p-stats'>goals: {data.players[0].ntgoals}</p>
+                      <p className='p-stats'>assists: {data.players[0].ntassists}</p>
+                      <p className='p-stats'>cards: {data.players[0].ntcards}</p>
                     </div>
                 </div>
                 {/* <UserCard
@@ -72,7 +82,8 @@ function flippingCard (){
                 
                 <FlippingCardBack>
                 <div className='main-table-back'>
-                    <p>Content that will be displayed on the back of the card</p>
+                  <p>hometown: {data.players[0].hometown}</p>
+                  <p>club: {data.players[0].club}</p>
                 </div>
                 </FlippingCardBack>
 
